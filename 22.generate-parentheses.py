@@ -10,6 +10,9 @@ from typing import List
 
 class Solution:
   def generateParenthesis(self, n: int) -> List[str]:
+    # only add open parenthesis if open_count < n
+    # only add close parenthesis if closed_count < open_count
+    # backtrack when open_count == closed_count == n``
     stack = []
     result = []
 
