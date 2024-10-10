@@ -9,7 +9,7 @@
       "console": "integratedTerminal"
     },
     {
-      "name": "C/C++ Windows: g++ debug active file",
+      "name": "C/C++ win: g++ debug active file",
       "type": "cppdbg",
       "request": "launch",
       "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
@@ -32,7 +32,8 @@
           "ignoreFailures": true
         }
       ],
-      "preLaunchTask": "C/C++ Windows: g++ active file"
+      "preLaunchTask": "C/C++: g++.exe build active file",
+      "postDebugTask": "delete exe"
     }
   ]
 }

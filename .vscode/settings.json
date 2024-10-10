@@ -1,0 +1,15 @@
+{
+  "files.associations": {
+    ".env*": "dotenv",
+    "vector": "cpp",
+    "algorithm": "cpp",
+    "iterator": "cpp",
+    "xhash": "cpp",
+    "xmemory": "cpp",
+    "xutility": "cpp",
+    "cassert": "cpp",
+    "unordered_set": "cpp",
+    "ios": "cpp",
+    "xiosbase": "cpp"
+  }
+}
