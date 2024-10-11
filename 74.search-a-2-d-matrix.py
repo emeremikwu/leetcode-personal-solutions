@@ -23,18 +23,19 @@ class Solution:
     while bottom <= top:
       mid_row = bottom + (top - bottom) // 2
 
-      # Check if x is present at mid
+      # Check target is at the begging of the row
       if matrix[mid_row][0] == target:
         return True
 
-      if target > matrix[mid_row][0] and target <= matrix[mid_row][right]:
+      # Check if target is in the row
+      if target > matrix[mid_row][0] and target <= matrix[mid_row][-1]:
         break
 
-      # If x is greater, ignore left half
+      # If target is greater, ignore bottom half
       if matrix[mid_row][0] < target:
         bottom = mid_row + 1
 
-      # If x is smaller, ignore right half
+      # If target is smaller, ignore top half
       else:
         top = mid_row - 1
 
